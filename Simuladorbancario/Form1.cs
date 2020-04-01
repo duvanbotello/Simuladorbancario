@@ -15,11 +15,14 @@ namespace Simuladorbancario
     {
         CuentaAhorros ahorros;
         CuentaCorriente corriente;
+        CDT inversion = new CDT();
         public Form1()
         {
             InitializeComponent();
             nombre.Text = "Duvan Botello";
             cedula.Text = "1090499082";
+            txtmes.Text = "1";
+          
         }
 
 
@@ -59,11 +62,14 @@ namespace Simuladorbancario
             {
                 ahorros = new CuentaAhorros(Convert.ToDouble(saldo));
                 textahorros.Text = Convert.ToString(ahorros.darSaldo()) + " [" + Convert.ToString(ahorros.darInteresMensual())+ "%]";
+        
             }
             else
             {
                 MessageBox.Show("Ingrese Saldo");
             }
+
+
 
 
             
@@ -80,6 +86,7 @@ namespace Simuladorbancario
                 String retiro = Microsoft.VisualBasic.Interaction.InputBox("Introduzca el monto de dinero a retirar", "retirar");
                 ahorros.retirarMonto(Convert.ToDouble(retiro));
                 textahorros.Text = Convert.ToString(ahorros.darSaldo()) + " [" + Convert.ToString(ahorros.darInteresMensual()) + "%]";
+                
             }
             else
             {
@@ -94,6 +101,7 @@ namespace Simuladorbancario
             {
                 corriente = new CuentaCorriente(Convert.ToDouble(saldo));
                 txtcorriente.Text = Convert.ToString(corriente.darSaldo());
+                
             }
             else
             {
@@ -112,12 +120,34 @@ namespace Simuladorbancario
             {
                 String retiro = Microsoft.VisualBasic.Interaction.InputBox("Introduzca el monto de dinero a retirar", "retirar");
                 corriente.retirarMonto(Convert.ToDouble(retiro));
-                txtcorriente.Text = Convert.ToString(ahorros.darSaldo());
+                txtcorriente.Text = Convert.ToString(corriente.darSaldo());
+                
             }
             else
             {
                 MessageBox.Show("No tienes saldo a favor...");
             }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            String inversion1 = Microsoft.VisualBasic.Interaction.InputBox("Introduzca el monto de dinero a Invertir", "Invertir CDT");
+            String InteresMensual = Microsoft.VisualBasic.Interaction.InputBox("Introduzca el interes mensual", "Invertir CDT");
+            if (inversion1 != null && InteresMensual != null)
+            {
+                inversion.invertir(Convert.ToDouble(inversion1), Convert.ToDouble(InteresMensual), Int32.Parse(s: txtmes.Text));
+                txtcdt.Text = Convert.ToString(inversion.calcularValorPresente(Int32.Parse(txtmes.Text))) + " [" + Convert.ToString(inversion.darInteresMensual()) + "%]";
+                txttotal.Text = Convert.ToString(corriente.darSaldo() + inversion.calcularValorPresente(Int32.Parse(txtmes.Text)) + ahorros.darSaldo());
+            }
+            else
+            {
+                MessageBox.Show("Ingrese valores");
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

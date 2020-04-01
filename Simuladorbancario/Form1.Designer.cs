@@ -37,15 +37,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txttotal = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtmes = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtcdt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
@@ -148,9 +148,9 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.txttotal);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.txtmes);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -171,13 +171,13 @@
             this.label13.TabIndex = 7;
             this.label13.Text = "Total";
             // 
-            // textBox7
+            // txttotal
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(307, 231);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(225, 20);
-            this.textBox7.TabIndex = 11;
+            this.txttotal.Enabled = false;
+            this.txttotal.Location = new System.Drawing.Point(307, 231);
+            this.txttotal.Name = "txttotal";
+            this.txttotal.Size = new System.Drawing.Size(225, 20);
+            this.txttotal.TabIndex = 11;
             // 
             // button5
             // 
@@ -187,14 +187,15 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Avanzar Mes";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // textBox8
+            // txtmes
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(111, 206);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(174, 20);
-            this.textBox8.TabIndex = 9;
+            this.txtmes.Enabled = false;
+            this.txtmes.Location = new System.Drawing.Point(111, 206);
+            this.txtmes.Name = "txtmes";
+            this.txtmes.Size = new System.Drawing.Size(174, 20);
+            this.txtmes.TabIndex = 9;
             // 
             // label12
             // 
@@ -211,7 +212,7 @@
             this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.textBox5);
+            this.panel4.Controls.Add(this.txtcdt);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel4.Location = new System.Drawing.Point(7, 144);
@@ -246,14 +247,15 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "Abrir";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // textBox5
+            // txtcdt
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(103, 22);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(174, 20);
-            this.textBox5.TabIndex = 7;
+            this.txtcdt.Enabled = false;
+            this.txtcdt.Location = new System.Drawing.Point(103, 22);
+            this.txtcdt.Name = "txtcdt";
+            this.txtcdt.Size = new System.Drawing.Size(174, 20);
+            this.txtcdt.TabIndex = 7;
             // 
             // label9
             // 
@@ -491,15 +493,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txttotal;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtmes;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtcdt;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button8;
