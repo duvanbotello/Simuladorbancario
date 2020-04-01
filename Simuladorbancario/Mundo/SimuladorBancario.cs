@@ -59,8 +59,8 @@ namespace Simuladorbancario.Mundo
 			// Inicializa el mes en el 1
 			mesActual = 1;
 			// Inicializa las tres cuentas en vacío
-			corriente = new CuentaCorriente();
-			ahorros = new CuentaAhorros();
+			
+		
 			inversion = new CDT();
 		}
 

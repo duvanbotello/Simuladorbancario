@@ -30,10 +30,10 @@ namespace Simuladorbancario.Mundo
 		/// Inicializa la cuenta de ahorro con el interés mensual que paga el banco.<br>
 		/// <b>post: </b> Se inicializó el saldo en 0 y el interés mensual en 0.006.<br>
 		/// </summary>
-		public CuentaAhorros()
+		public CuentaAhorros(double saldo)
 		{
-			saldo = 0;
-			interesMensual = 0.006;
+			this.saldo = saldo;
+			interesMensual = 0.6;
 		}
 
 		/// <summary>

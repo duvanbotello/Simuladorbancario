@@ -25,9 +25,9 @@ namespace Simuladorbancario.Mundo
 		/// Inicializa la cuenta corriente. <br>
 		/// <b>post: </b> Se inicializó el saldo en 0.<br>
 		/// </summary>
-		public CuentaCorriente()
+		public CuentaCorriente(double saldo)
 		{
-			saldo = 0;
+			this.saldo = saldo;
 		}
 
 		/// <summary>
