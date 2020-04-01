@@ -1,0 +1,10 @@
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\bin\Debug\Simuladorbancario.exe.config
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\bin\Debug\Simuladorbancario.exe
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\bin\Debug\Simuladorbancario.pdb
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.csprojAssemblyReference.cache
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.Form1.resources
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.Properties.Resources.resources
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.csproj.GenerateResource.cache
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.csproj.CoreCompileInputs.cache
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.exe
+C:\Users\DuvanBotello\source\repos\Simuladorbancario\Simuladorbancario\obj\Debug\Simuladorbancario.pdb
