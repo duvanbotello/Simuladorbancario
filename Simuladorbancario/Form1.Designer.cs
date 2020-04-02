@@ -229,6 +229,7 @@
             this.button6.TabIndex = 9;
             this.button6.Text = "Cerrar";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label10
             // 
@@ -420,6 +421,7 @@
             this.button8.TabIndex = 9;
             this.button8.Text = "Opcion 2";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label11
             // 
@@ -438,6 +440,7 @@
             this.button9.TabIndex = 8;
             this.button9.Text = "Opcion 1";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form1
             // 

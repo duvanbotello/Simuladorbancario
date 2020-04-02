@@ -147,7 +147,32 @@ namespace Simuladorbancario
 
         private void button5_Click(object sender, EventArgs e)
         {
+            int mes = Int32.Parse(txtmes.Text);
+            int nuevomes = mes + 1;
+            txtmes.Text = Convert.ToString(nuevomes);
+            ahorros.actualizarSaldoPorPasoMes();
+            txttotal.Text = Convert.ToString(corriente.darSaldo() + inversion.calcularValorPresente(Int32.Parse(txtmes.Text)) + ahorros.darSaldo());
+            textahorros.Text = Convert.ToString(ahorros.darSaldo()) + " [" + Convert.ToString(ahorros.darInteresMensual()) + "%]";
+        }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+          
+            double valorCierreCDT = inversion.cerrar(Int32.Parse(txtmes.Text));
+            corriente.consignarMonto(valorCierreCDT);
+            txtcdt.Text = Convert.ToString(inversion.calcularValorPresente(0)) + " [" + Convert.ToString(inversion.darInteresMensual()) + "%]";
+            txtcorriente.Text = Convert.ToString(corriente.darSaldo());
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Respuesta 1");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Respuesta 2");
         }
     }
 }
